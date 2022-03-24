@@ -1,0 +1,43 @@
+/* MADE BY: ALEJANDRO BUENDIA ESCAMILLA*/
+/* "ESTO LO HAGO PA' DIVERTIRME"*/
+
+/* FUENTES */
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('../assets/fonts/GreatVibes-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../assets/fonts/Montserrat-Medium.ttf');
+}
+/* GENERALES */
+*{
+    margin: 0px auto;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px;
+}
+
+/* BARRA DE NAVEGACION */
+.menu {
+    background-color: bisque;
+    margin: 0px;
+    padding: 20px;
+}
+
+.item {
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Montserrat-Medium';
+}
+
+.nav-icon {
+    margin-bottom: 3px;
+    margin-left: 3px;
+}
+
+.item-title {
+    font-family: 'Great Vibes';
+    text-align: center;
+    font-size: 40px;
+}

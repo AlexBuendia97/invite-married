@@ -10,6 +10,10 @@
     font-family: 'Montserrat-Medium';
     src: url('../assets/fonts/Montserrat-Medium.ttf');
 }
+
+.vibes-font {
+    font-family: 'Great Vibes';
+}
 /* GENERALES */
 *{
     margin: 0px auto;
@@ -71,4 +75,28 @@
 
 .card-style p {
     margin: 0px;
+}
+
+/* SECTION BANNER PHRASE */
+.banner-phrase {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-size: cover;
+    background-image: url('../assets/images/familia.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+}
+
+.phrase-box {
+    font-family: 'Great Vibes';
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+    font-size: 30px;
+}
+
+/* SECTION WHERE AND WHEN */
+.where-style {
+    margin-top: 30px;
 }

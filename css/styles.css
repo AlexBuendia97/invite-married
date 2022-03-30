@@ -14,6 +14,9 @@
 .vibes-font {
     font-family: 'Great Vibes';
 }
+.montserrat-font {
+    font-family: 'Montserrat-Medium';
+}
 /* GENERALES */
 *{
     margin: 0px auto;
@@ -99,4 +102,18 @@
 /* SECTION WHERE AND WHEN */
 .where-style {
     margin-top: 30px;
+}
+
+.card-margin {
+    margin: initial;
+}
+
+.btn-wedding {
+    color: black;
+    background-color: bisque;
+    border-color: bisque;
+}
+
+.card-header {
+    background-color: bisque;
 }

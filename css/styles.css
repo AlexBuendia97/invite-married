@@ -117,3 +117,19 @@
 .card-header {
     background-color: bisque;
 }
+
+/* NOSOTROS SECTION */
+.background-gray {
+    background-color: #F9F9F9 !important;
+}
+
+.gray-font {
+    color: #949494;
+}
+
+.icon-cross {
+    background: url('../assets/icons/cross.png');
+    width: 20px;
+    height: 24px;
+    display: inline-block;
+}

@@ -1,4 +1,15 @@
-let myElement = document.querySelector('#cuenta');
+'use strict'
+const myElement = document.querySelector('#cuenta');
+const mainSection = document.querySelector('#main-photo');
+const whereWhen = document.querySelector('#where-section');
+const nosotros = document.querySelector('#nosotros');
+const toggler = document.querySelector('.navbar-toggler');
+const navItem1 = document.querySelector('#navItem1');
+const navItem2 = document.querySelector('#navItem2');
+const navItem3 = document.querySelector('#navItem3');
+const navItem4 = document.querySelector('#navItem4');
+
+
 simplyCountdown(myElement, {
     year: 2022, // required
     month: 4, // required
@@ -27,4 +38,27 @@ simplyCountdown(myElement, {
     wordClass: 'simply-word', // word css class
     zeroPad: false,
     countUp: false, // enable count up if set to true
+});
+
+function scrollIntoViewOffset(element) {
+    let headerOffset = 75;
+    let elPosition = element.getBoundingClientRect().top;
+    let offsetPosition = elPosition + window.pageYOffset - headerOffset;
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+   });
+}
+
+navItem1.addEventListener('click', () => {
+    scrollIntoViewOffset(mainSection);
+    toggler.click();
+});
+navItem2.addEventListener('click', () => {
+    scrollIntoViewOffset(whereWhen);
+    toggler.click();
+});
+navItem4.addEventListener('click', () => {
+    scrollIntoViewOffset(nosotros);
+    toggler.click();
 });

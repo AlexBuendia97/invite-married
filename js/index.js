@@ -3,6 +3,7 @@ const myElement = document.querySelector('#cuenta');
 const mainSection = document.querySelector('#main-photo');
 const whereWhen = document.querySelector('#where-section');
 const nosotros = document.querySelector('#nosotros');
+const confirm = document.querySelector('#confirm');
 const toggler = document.querySelector('.navbar-toggler');
 const navItem1 = document.querySelector('#navItem1');
 const navItem2 = document.querySelector('#navItem2');
@@ -60,5 +61,10 @@ navItem2.addEventListener('click', () => {
 });
 navItem4.addEventListener('click', () => {
     scrollIntoViewOffset(nosotros);
+    toggler.click();
+});
+
+navItem3.addEventListener('click', () => {
+    scrollIntoViewOffset(confirm);
     toggler.click();
 });

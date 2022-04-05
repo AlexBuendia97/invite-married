@@ -7,6 +7,7 @@
     <title>Marisol & Miguel - 25 Aniversario</title>
     <link rel="stylesheet" href="css/bootstrap-5.1.3/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="./assets/icons/anillos.png"/>
 </head>
 <body>
@@ -48,7 +49,7 @@
     
     <!-- BANNER FRASE -->
     <section class="banner-phrase">
-        <div class="phrase-box text-center align-self-end align-self-sm-center">
+        <div class="phrase-box text-center align-self-end">
             Faltan:<p id="cuenta"></p>
         </div>
     </section>
@@ -56,7 +57,7 @@
         <!-- INFO SECTION -->
     <section id="where-section" class="where-style container">
         <div class="vibes-font text-center">
-            <h1>¿Dónde y Cuándo?</h1>
+            <h1 style="font-size: 50px;">¿Dónde y Cuándo?</h1>
             <h3>22 Abril 2022</h3>
         </div>
         <div id="cards-when-where" class="row m-auto">
@@ -68,7 +69,7 @@
                         <h5 class="card-title">PARROQUIA DEL ESPIRITU SANTO</h5>
                         <p class="card-text">Cuándo: 22 de abril de 2022 18:45 hrs.</p>
                         <p class="card-text">Dirección: Bosques de España #31 D Fracc. Bosques de Aragón, Nezahualcóyotl, Edo. México; México</p>
-                        <a href="#" class="btn btn-wedding">Ver mapa</a>
+                        <a href="#" class="btn btn-wedding" style="width: 100%;">Ver mapa</a>
                     </div>
                 </div>
             </div>
@@ -80,7 +81,7 @@
                         <h5 class="card-title">SALÓN TERRAZA "MIRAGE"</h5>
                         <p class="card-text">Cuándo: 22 de abril de 2022 20:30 hrs.</p>
                         <p class="card-text">Dirección: Bosques de los Continentes #4, Bosques de Aragón, Nezahualcóyotl, Edo. México; México</p>
-                        <a href="#" class="btn btn-wedding">Ver mapa</a>
+                        <a href="#" class="btn btn-wedding" style="width: 100%;">Ver mapa</a>
                     </div>
                 </div>
             </div>
@@ -94,31 +95,67 @@
         </div>
     </section>
     <!-- END INFO SECTION -->
-    <!-- CONFIRM SECTION -->
-    <section id="nosotros" class="where-style container-fluid">
+    <!-- NOSOTROS SECTION -->
+    <section id="nosotros" class="where-style container-fluid mt-5">
         <div class="row m-auto">
-            <h1 class="vibes-font text-center" style="font-size: 40px;">Nosotros</h1>
+            <h1 class="vibes-font text-center" style="font-size: 50px;">Nosotros</h1>
             <!-- CARRUSEL -->
+            <div id="carouselMM" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselMM" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselMM" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselMM" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselMM" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/carrusel/carrusel1.jpeg" class="d-block w-100" alt="mm1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/carrusel/carrusel2.jpeg" class="d-block w-100" alt="mm2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/carrusel/carrusel3.jpeg" class="d-block w-100" alt="mm3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/carrusel/carrusel4.jpeg" class="d-block w-100" alt="mm4">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMM" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMM" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         <!-- END CARRUSEL -->
         </div>
         <div class="row m-auto background-gray">
-            <h1 class="vibes-font text-center my-5">Nuestros hijos, padres y padrinos</h1>
+            <h1 class="vibes-font text-center my-5">Nuestros hijos y padrinos</h1>
             <div class="row text-center montserrat-font align-items-center">
-                <div class="col-12 col-md-3 my-4">
+                <div class="col-12 col-md-6 my-4">
                     <h6>ALEJANDRO BUENDIA ESCAMILLA<br>Y<br>MIGUEL ANGEL BUENDIA ESCAMILLA</h6>
                     <P class="gray-font">Hijos</P>
                 </div>
-                <div class="col-12 col-md-3 my-4">
-                    <h6>GUILLERMINA MENESES LÓPEZ<br>Y<br>ESTEBAN BUENDIA MENDEZ</h6>
-                    <P class="gray-font">Padres del novio</P>
-                </div>
-                <div class="col-12 col-md-3 my-4">
-                    <h6>ELENA LUEVANO LÓPEZ<br>Y<br>PAULINO ESCAMILLA BARRERA<span class="icon-cross"></span></h6>
-                    <P class="gray-font">Padres de la novia</P>
+                <div class="col-12 col-md-6 my-4">
+                    <h6>PAUL RAMOS RAMIREZ<br>Y<br>SILVIA ESCAMILLA LUEVANO</h6>
+                    <P class="gray-font">Padrinos</P>
                 </div>
             </div>
         </div>
-
+    </section>
+    <!-- END NOSOTROS SECTION -->
+    <!-- CONFIRM SECTION -->
+    <section id="confirm" class="container-fluid background-dark-gray">
+        <div class="row">
+            <h1 class="vibes-font text-center mt-5 mb-3 text-white" style="font-size: 50px;">Confirmar Asistencia</h1>
+            <h5 class="text-white text-center montserrat-font mb-4">¿Nos confirmas?<br>Gracias</h5>
+            <div class="wa-button montserrat-font">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i><a class="ms-1" target="_blank" href="https://wa.link/7ffecd">Confirmar asistencia</a>
+            </div>
+        </div>
     </section>
     <!-- END CONFIRM SECTION -->
     <script type="text/javascript" src="./js/bootstrap-5.1.3/bootstrap.min.js"></script>

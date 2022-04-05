@@ -83,14 +83,20 @@
 /* SECTION BANNER PHRASE */
 .banner-phrase {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     margin-top: 50px;
     background-size: cover;
-    background-image: url('../assets/images/familia.jpg');
+    background-image: url('../assets/images/contadorFam.JPEG');
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 400px;
+    min-height: 600px;
 }
+
+@media (max-width: 576px) {
+    .banner-phrase {
+        min-height: 400px;
+    }
+  }
 
 .phrase-box {
     font-family: 'Great Vibes';
@@ -123,6 +129,10 @@
     background-color: #F9F9F9 !important;
 }
 
+.background-dark-gray {
+    background-color: #333 !important;
+}
+
 .gray-font {
     color: #949494;
 }
@@ -132,4 +142,34 @@
     width: 20px;
     height: 24px;
     display: inline-block;
+}
+
+/* CONFIRM SECTION */
+.wa-button {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #128C7E;
+    width: auto;
+    margin: 0px auto;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    width: 80%;
+    line-height: 24px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px #331919;
+}
+
+.wa-button a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.wa-button a:hover{
+    text-decoration: underline;
+}
+
+.text-white {
+    color: white !important;
 }

@@ -9,6 +9,10 @@ const navItem1 = document.querySelector('#navItem1');
 const navItem2 = document.querySelector('#navItem2');
 const navItem3 = document.querySelector('#navItem3');
 const navItem4 = document.querySelector('#navItem4');
+const btnMapa1 = document.querySelector('#mapa1');
+const btnMapa2 = document.querySelector('#mapa2');
+const modalContent1 = document.querySelector('#modalContent1');
+const modalContent2 = document.querySelector('#modalContent2');
 
 
 simplyCountdown(myElement, {
@@ -67,4 +71,14 @@ navItem4.addEventListener('click', () => {
 navItem3.addEventListener('click', () => {
     scrollIntoViewOffset(confirm);
     toggler.click();
+});
+
+btnMapa1.addEventListener('click', () => {
+    modalContent1.style.display = 'block';
+    modalContent2.style.display = 'none';
+});
+
+btnMapa2.addEventListener('click', () => {
+    modalContent1.style.display = 'none';
+    modalContent2.style.display = 'block';
 });

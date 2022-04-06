@@ -173,3 +173,24 @@
 .text-white {
     color: white !important;
 }
+
+/* MODALES */
+.modal-header,.modal-body, .modal-footer, .modal-title{
+    margin: initial;
+}
+
+.mapa{
+    height: 300px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    height: 500px;
+    background-color: #F9F9F9;
+    background-image: url('../assets/images/piePagina.jpeg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -69,7 +69,7 @@
                         <h5 class="card-title">PARROQUIA DEL ESPIRITU SANTO</h5>
                         <p class="card-text">Cuándo: 22 de abril de 2022 18:45 hrs.</p>
                         <p class="card-text">Dirección: Bosques de España #31 D Fracc. Bosques de Aragón, Nezahualcóyotl, Edo. México; México</p>
-                        <a href="#" class="btn btn-wedding" style="width: 100%;">Ver mapa</a>
+                        <button id="mapa1" data-bs-toggle="modal" data-bs-target="#modalMaps1" class="btn btn-wedding" style="width: 100%;">Ver mapa</button>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                         <h5 class="card-title">SALÓN TERRAZA "MIRAGE"</h5>
                         <p class="card-text">Cuándo: 22 de abril de 2022 20:30 hrs.</p>
                         <p class="card-text">Dirección: Bosques de los Continentes #4, Bosques de Aragón, Nezahualcóyotl, Edo. México; México</p>
-                        <a href="#" class="btn btn-wedding" style="width: 100%;">Ver mapa</a>
+                        <button id="mapa2" data-bs-toggle="modal" data-bs-target="#modalMaps1" class="btn btn-wedding" style="width: 100%;">Ver mapa</button>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
         <!-- END CARRUSEL -->
         </div>
         <div class="row m-auto background-gray">
-            <h1 class="vibes-font text-center my-5">Nuestros hijos y padrinos</h1>
+            <h1 class="vibes-font text-center mt-5 mb-2">Nuestros hijos y padrinos</h1>
             <div class="row text-center montserrat-font align-items-center">
                 <div class="col-12 col-md-6 my-4">
                     <h6>ALEJANDRO BUENDIA ESCAMILLA<br>Y<br>MIGUEL ANGEL BUENDIA ESCAMILLA</h6>
@@ -153,11 +153,54 @@
             <h1 class="vibes-font text-center mt-5 mb-3 text-white" style="font-size: 50px;">Confirmar Asistencia</h1>
             <h5 class="text-white text-center montserrat-font mb-4">¿Nos confirmas?<br>Gracias</h5>
             <div class="wa-button montserrat-font">
-                <i class="fa fa-whatsapp" aria-hidden="true"></i><a class="ms-1" target="_blank" href="https://wa.link/7ffecd">Confirmar asistencia</a>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i><a class="ms-1" target="_blank" href="https://wa.link/2s1joy">Confirmar asistencia</a>
             </div>
         </div>
     </section>
     <!-- END CONFIRM SECTION -->
+    <footer>
+        <div class="text-white align-self-end">
+            <h1 class="vibes-font text-center mt-5" style="font-size: 50px;">!Te esperamos!</h1>
+            <h3 class="vibes-font text-center mb-3">Nuestro amor puede hacer todo lo que nos propongamos.</h3>
+        </div>
+    </footer>
+    <!-- MODAL MAPS -->
+    <!-- Modal -->
+    <div class="modal fade" id="modalMaps1" tabindex="-1" aria-labelledby="modalMaps1Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div id="modalContent1" class="modal-content" style="display: none;">
+            <div class="modal-header">
+              <h5 class="modal-title montserrat-font" id="exampleModalLabel">CEREMONIA RELIGIOSA</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body montserrat-font">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.8028019245085!2d-99.04976118537978!3d19.464067186866504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb0d0abfb855%3A0xf782cbc875df669c!2sParroquia%20del%20Esp%C3%ADritu%20Santo!5e0!3m2!1ses-419!2smx!4v1649216550257!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h5 class="mt-2">PARROQUIA DEL ESPIRITU SANTO</h5>
+                <p>Cuándo: 22 de abril de 2022 18:45 hrs.<br>
+                Dirección: Bosques de España #31 D Fracc. Bosques de Aragón, Nezahualcóyotl, Edo. México; México</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-wedding montserrat-font" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+          <div id="modalContent2" class="modal-content" style="display: none;">
+            <div class="modal-header">
+              <h5 class="modal-title montserrat-font" id="exampleModalLabel">SALON</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body montserrat-font">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.6234245590013!2d-99.05639148537966!3d19.47179628686209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb0889ab3cd3%3A0x5e4175974a6a486d!2sSal%C3%B3n%20de%20Fiestas%20Terraza%20Mirage!5e0!3m2!1ses-419!2smx!4v1649216927550!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h5 class="mt-2">SALÓN TERRAZA "MIRAGE"</h5>
+                <p>Cuándo: 22 de abril de 2022 20:30 hrs.<br>
+                Dirección: Bosques de los Continentes #4, Bosques de Aragón, Nezahualcóyotl, Edo. México; México</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-wedding montserrat-font" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- END MODAL MAPS -->
     <script type="text/javascript" src="./js/bootstrap-5.1.3/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/simplyCountdown.js-master/dist/simplyCountdown.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
